@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Student from './Student.js';
+import University from './University.js';
+import React from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <React.Fragment>
+          <University/>
+          <Student name="Rick Rude" number="1111" enrolled="2"/>
+      </React.Fragment>
+  );
 }
+
 
 export default App;
